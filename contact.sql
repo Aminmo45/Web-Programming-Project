@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2021 at 07:56 PM
+-- Generation Time: Dec 23, 2021 at 08:00 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -29,10 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contact` (
   `ID` int(11) NOT NULL,
-  `Name` varchar(255) DEFAULT NULL,
-  `Mail` varchar(255) DEFAULT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Mail` varchar(255) NOT NULL,
   `Phone-number` text NOT NULL,
-  `Messege` varchar(255) DEFAULT NULL
+  `Messege` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
