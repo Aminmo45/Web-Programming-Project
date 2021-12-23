@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2021 at 06:54 PM
+-- Generation Time: Dec 23, 2021 at 07:56 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -31,7 +31,7 @@ CREATE TABLE `contact` (
   `ID` int(11) NOT NULL,
   `Name` varchar(255) DEFAULT NULL,
   `Mail` varchar(255) DEFAULT NULL,
-  `Phone-number` int(11) NOT NULL,
+  `Phone-number` text NOT NULL,
   `Messege` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -53,7 +53,7 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
